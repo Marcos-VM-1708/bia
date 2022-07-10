@@ -1,6 +1,4 @@
 # Estruturando o programa da batalha naval.
-
-
 import pygame
 import os
 
@@ -52,7 +50,7 @@ class Embarcacao():
     def get_destruidas(self):
         destruidas = 0
         for estado in self.estados_celulas:
-            if (estado == Embarcacao.EstadoCelula.DESTRUIDA):
+            if estado == Embarcacao.EstadoCelula.DESTRUIDA:
                 destruidas += 1
         return destruidas
 

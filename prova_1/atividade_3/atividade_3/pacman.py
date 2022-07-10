@@ -97,7 +97,7 @@ if __name__ == "__main__":
         pacman.calcular_regras()
 
         # Pintar a tela
-        screen.fill(PRETO)
+        screen.fill((255,255,255))
         cenario.pintar(screen)
         pacman.pintar(screen)
         pygame.display.update()
