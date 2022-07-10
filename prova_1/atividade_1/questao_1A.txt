@@ -1,0 +1,16 @@
+No código em questão trabalhamos com três variáveis sendo, (s e f) duas strings que compõem o caça palavras,
+e (c) que é uma instancia para f ser alocada na string s.
+
+Para gerar o caça palavras primeiro temos que percorrer s pois é pre-entendido que s é o principal parâmetro
+para a construção do caça palavra, com isto é aplicado o método enumerate dentro do loop for para retornar as
+letras da string s e a posições referente a lista, ponto que trabalhamos com a string passada como tipo lista.
+
+Dentro do for ocorre uma verificação que confere se as letras de f são iguais a c, um ponto importante é que
+nesta aplicação o valor logico de c só pode ser ("a", "o", "r") pois mais a frente pode se observar que c é
+necessariamente maior que um.
+
+por fim, cada posição de c em f e armazenada dentro de uma lista, onde aplicaremos f na segunda posição do valor
+de c, após feito verificamos através de um contador x a segunda posição de c na string f, caso x = posição 2 da
+lista exibe-se a saída ("programa")  caso contrario x inclemente valor +1.
+lista exibe-se a saída ("programa")  caso contrario x inclemente valor +1.
+
