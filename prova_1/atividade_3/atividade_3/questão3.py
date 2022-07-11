@@ -9,7 +9,6 @@ PRETO = (0, 0, 0)
 AZUL = (0, 0, 255)
 VELOCIDADE = 1
 
-
 class Cenario:
     def __init__(self, tamanho):
         self.tamanho = tamanho
@@ -32,29 +31,16 @@ class Cenario:
                 cor == AMARELO
                 pygame.draw.rect(tela, cor, (x, y, self.tamanho, self.tamanho), 0)
                 print(self.matriz)
+
     def pintar(self, tela):
         for numero_linha, linha in enumerate(self.matriz):
             self.pintar_linha(tela, numero_linha, linha)
-
-class Pacman:
-    def __init__(self, tamanho,):
-        self.x_m = 0
-        self.y_m = 0
-        self.coluna = self.x_m
-        self.linha = self.y_m
-        self.centro_x = 400
-        self.centro_y = 300
-        self.tamanho = tamanho
-        self.vel_x = 0
-        self.vel_y = 0
-        self.raio = self.tamanho // 2
 
     def processar_eventos(self, eventos):
 
         for e in eventos:
             if e.type == pygame.MOUSEBUTTONDOWN:
                 x_m, y_m = pygame.mouse.get_pos()
-
                 self.x_m = x_m * self.tamanho
                 self.y_m = y_m * self.tamanho
 
