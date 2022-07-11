@@ -15,7 +15,7 @@
 # (x, y, x + offset, y + offset)
 
 import pygame
-import os
+
 
 class spritesheet(object):
     def __init__(self, filename):

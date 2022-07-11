@@ -3,7 +3,7 @@ import numpy as np
 
 boleano = False
 
-tamanho = input("qual a dificudade do caça palavras?(facil, medio, dificil) ").upper()
+tamanho = input("qual a dificudade do caça palavras?(facil()5x5, medio(10x10), dificil(15x15)) ").upper()
 if tamanho == "FACIL":
     tamanho = 5
 elif tamanho == "MEDIO":
